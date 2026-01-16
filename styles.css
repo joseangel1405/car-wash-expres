@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b1d26;
+  color: #ffffff;
+}
+
+/* BOTÓN FLOTANTE */
+.call-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00ffcc;
+  color: #000;
+  font-size: 1.8rem;
+  padding: 15px 18px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 0 20px #00ffcc;
+  z-index: 1000;
+}
+
+/* HERO */
+.hero {
+  height: 80vh;
+  background-image: url("https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+}
+
+.hero-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #00d4ff;
+  text-shadow: 0 0 20px #00d4ff;
+}
+
+.hero p {
+  margin: 15px 0 30px;
+  font-size: 1.1rem;
+}
+
+/* BOTONES */
+.btn-primary,
+.btn-secondary {
+  padding: 15px 35px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: #00d4ff;
+  color: #000;
+  box-shadow: 0 0 20px #00d4ff;
+}
+
+.btn-secondary {
+  background: gold;
+  color: #000;
+}
+
+.big {
+  font-size: 1.2rem;
+}
+
+/* CONFIANZA */
+.trust {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #08161f;
+  padding: 30px 10px;
+}
+
+.trust-box {
+  max-width: 250px;
+  text-align: center;
+  margin: 15px;
+}
+
+/* SERVICIOS */
+.services {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00d4ff;
+}
+
+.service-card {
+  display: block;
+  background: #112f41;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  text-decoration: none;
+  color: #fff;
+  border-left: 6px solid #00d4ff;
+}
+
+.service-card span {
+  font-size: 1.4rem;
+  color: #00ffcc;
+  font-weight: bold;
+}
+
+.vip {
+  border-left-color: gold;
+  background: #1a3c4d;
+}
+
+/* VIP */
+.vip-section {
+  background: #000;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.vip-section ul {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.vip-section li {
+  margin: 10px 0;
+}
+
+/* ZONAS */
+.zones {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.zone-list span {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: #112f41;
+  border-radius: 20px;
+}
+
+/* CTA FINAL */
+.final-cta {
+  background: linear-gradient(135deg, #00d4ff, #00ffcc);
+  color: #000;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
